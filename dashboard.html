@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="top">
+  <span>USS AZURA NCC-1656-G</span>
+  <span id="rank"></span>
+</div>
+
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="fleet.html">Fleet</a>
+<a href="ship.html">Ship</a>
+<a href="crew.html">Crew</a>
+</nav>
+
+<main>
+<h2>Fleet Status</h2>
+<ul>
+<li>Active Ships: 12</li>
+<li>Docked Ships: 4</li>
+<li>Nearby Vessels: 2</li>
+</ul>
+
+<button onclick="setAlert('red')">RED ALERT</button>
+<button onclick="setAlert('yellow')">YELLOW ALERT</button>
+<button onclick="setAlert('blue')">BLUE ALERT</button>
+<button onclick="setAlert('proximity')">PROXIMITY</button>
+</main>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
