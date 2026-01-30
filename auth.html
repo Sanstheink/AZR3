@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Authorization</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<h2>AUTHORIZATION CODE</h2>
+
+<input id="code" placeholder="EX: AZURA-10092">
+<button onclick="login()">Authorize</button>
+
+<script src="assets/js/data.js"></script>
+<script>
+function login(){
+  const c=document.getElementById("code").value;
+  if(AUTH[c]){
+    localStorage.setItem("user",JSON.stringify(AUTH[c]));
+    location.href="loading.html";
+  }else{
+    alert("INVALID AUTHORIZATION CODE");
+  }
+}
+</script>
+</body>
+</html>
